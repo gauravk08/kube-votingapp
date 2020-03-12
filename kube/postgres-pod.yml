@@ -10,5 +10,7 @@ spec:
       containers:
        - name: postgres 
          image: postgres:9.4 
+         args:
+          - POSTGRES_HOST_AUTH_METHOD=trust
          ports:
            - containerPort: 5432
